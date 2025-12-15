@@ -28,7 +28,7 @@ function writeUserData(name, content) {
     });
 }
 
-const mylist = document.getElementById('mylist');
+const mylist = document.getElementById('temp');
 
 const db = getDatabase();
 
