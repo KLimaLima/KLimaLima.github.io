@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getDatabase, onValue, ref, set, push } from "firebase/database";
+import { getDatabase, onValue, ref, set, push, query, limitToLast } from "firebase/database";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBjbzbTm00LCU_c03O-ijwn-SH_I1NLoWI",
@@ -13,30 +13,37 @@ const firebaseConfig = {
 
 initializeApp(firebaseConfig);
 
-function writeUserData(name, content) {
+// function writeUserData(name, content) {
     
-    const db = getDatabase();
+//     const db = getDatabase();
 
-    const reference = ref(db, 'fake_data/');
+//     const reference = ref(db, 'fake_data/');
 
-    const pushRef = push(reference)
+//     const pushRef = push(reference)
 
-    set(pushRef, {
+//     set(pushRef, {
 
-        username: name,
-        content: content
-    });
-}
+//         username: name,
+//         content: content
+//     });
+// }
 
-const mylist = document.getElementById('temp');
+const temperature_text = document.getElementById('temperature_text');
 
 const db = getDatabase();
 
 const reference = ref(db, 'fake_data/');
 
-onValue(reference, (snapshot) => {
+// reference.limitToLast(1).on('child_added', (snapshot) => {
+//   console.log(snapshot.key);
+//   console.log(snapshot.val());
+// });
 
-    let list_html = '';
+const recentPostsRef = query(reference, limitToLast(1));
+
+onValue(recentPostsRef, (snapshot) => {
+
+    let temperature = '';
 
     snapshot.forEach((childSnapshot) => {
 
@@ -48,10 +55,10 @@ onValue(reference, (snapshot) => {
         console.log('childData');
         console.log(childData);
 
-        list_html = list_html + '<li>' + childData.username + ' said ' + childData.content + '</li>';
+        temperature = temperature + '<li>' + childData.username + ' said ' + childData.content + '</li>';
     });
 
-    mylist.innerHTML = list_html;
+    temperature_text.innerHTML = temperature;
 });
 // , {
 //     onlyOnce: true
