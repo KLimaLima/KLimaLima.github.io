@@ -13,6 +13,8 @@ const firebaseConfig = {
 
 initializeApp(firebaseConfig);
 
+const db = getDatabase();
+
 // function writeUserData(name, content) {
     
 //     const db = getDatabase();
@@ -28,37 +30,125 @@ initializeApp(firebaseConfig);
 //     });
 // }
 
+//////////////////////////////////GET TEMPERATURE/////////////////////////////////////////
+
 const temperature_text = document.getElementById('temperature_text');
 
-const db = getDatabase();
+const temperature_reference = ref(db, 'temperature/');
 
-const reference = ref(db, 'fake_data/');
+const recentTempRef = query(temperature_reference, limitToLast(1));
 
-// reference.limitToLast(1).on('child_added', (snapshot) => {
-//   console.log(snapshot.key);
-//   console.log(snapshot.val());
-// });
-
-const recentPostsRef = query(reference, limitToLast(1));
-
-onValue(recentPostsRef, (snapshot) => {
+onValue(recentTempRef, (snapshot) => {
 
     let temperature = '';
 
     snapshot.forEach((childSnapshot) => {
 
-        const childKey = childSnapshot.key;
+        // const childKey = childSnapshot.key;
         const childData = childSnapshot.val();
 
-        console.log('childKey');
-        console.log(childKey);
-        console.log('childData');
-        console.log(childData);
+        // console.log('childKey');
+        // console.log(childKey);
+        // console.log('childData');
+        // console.log(childData);
 
-        temperature = temperature + '<li>' + childData.username + ' said ' + childData.content + '</li>';
+        temperature = childData.celcius + '°C';
     });
 
     temperature_text.innerHTML = temperature;
+});
+// , {
+//     onlyOnce: true
+// });
+
+//////////////////////////////////GET HUMIDITY/////////////////////////////////////////
+
+const humidity_text = document.getElementById('humidity_text');
+
+const humidity_reference = ref(db, 'humidity/');
+
+const recentHumidityRef = query(humidity_reference, limitToLast(1));
+
+onValue(recentHumidityRef, (snapshot) => {
+
+    let humidity = '';
+
+    snapshot.forEach((childSnapshot) => {
+
+        // const childKey = childSnapshot.key;
+        const childData = childSnapshot.val();
+
+        // console.log('childKey');
+        // console.log(childKey);
+        // console.log('childData');
+        // console.log(childData);
+
+        humidity = childData.percent + '%';
+    });
+
+    humidity_text.innerHTML = humidity;
+});
+// , {
+//     onlyOnce: true
+// });
+
+//////////////////////////////////GET CO2 PPM/////////////////////////////////////////
+
+const co2_text = document.getElementById('co2_text');
+
+const co2_reference = ref(db, 'co2/');
+
+const recentCO2Ref = query(co2_reference, limitToLast(1));
+
+onValue(recentCO2Ref, (snapshot) => {
+
+    let co2 = '';
+
+    snapshot.forEach((childSnapshot) => {
+
+        // const childKey = childSnapshot.key;
+        const childData = childSnapshot.val();
+
+        // console.log('childKey');
+        // console.log(childKey);
+        // console.log('childData');
+        // console.log(childData);
+
+        co2 = childData.ppm;
+    });
+
+    co2_text.innerHTML = co2;
+});
+// , {
+//     onlyOnce: true
+// });
+
+//////////////////////////////////GET LIGHT LUX/////////////////////////////////////////
+
+const light_text = document.getElementById('light_text');
+
+const light_reference = ref(db, 'light/');
+
+const recentLightRef = query(light_reference, limitToLast(1));
+
+onValue(recentLightRef, (snapshot) => {
+
+    let light = '';
+
+    snapshot.forEach((childSnapshot) => {
+
+        // const childKey = childSnapshot.key;
+        const childData = childSnapshot.val();
+
+        // console.log('childKey');
+        // console.log(childKey);
+        // console.log('childData');
+        // console.log(childData);
+
+        light = childData.lux;
+    });
+
+    light_text.innerHTML = light;
 });
 // , {
 //     onlyOnce: true
