@@ -1,19 +1,29 @@
 {
     "content":[
     {
-        "date": "2026-1-1",
-        "title": "study dip",
-        "content": "dr suruh buat portfolio"
+        "date": "2022-10-6",
+        "title": "Study at UTeM",
+        "content": "Starting degree in Computer Engineering with Honours at Universiti Teknikal Malaysia Melaka"
     },
     {
-        "date": "2025-3-21",
-        "title": "test",
-        "content": "yes just a test"
+        "date": "2023-6-28",
+        "title": "Dungeon Dive Card Game in C++ and SFML",
+        "content": "Worked on an assignment involving data structure and algorithm. Created a simple graphical card game in C++. Used SFML as the framework for easy graphic coding"
     },
     {
-        "date": "2026-10-10",
-        "title": "future",
-        "content": "just testing date timeline"
+        "date": "2026-1-17",
+        "title": "Portfolio Website",
+        "content": "It's the website you're looking at right now! Developed with Bootstrap 5 and Webpack"
+    },
+    {
+        "date": "2024-3-5",
+        "title": "1st TU-UTeM VR Game Development Project",
+        "content":"Joined a project involving Malaysian and Japanese students. Participants are required to create a VR game with the theme SDG. Learnt a lot about international collaboration (and the difficulty in communicating). Got experience on dealing with foreigners and touring for them during their visit"
+    },
+    {
+        "date": "2025-2-27",
+        "title": "2nd TU-UTeM VR Game Development Project",
+        "content":"Joined the VR Game Project again, but as a participant and organisation member. Same concept; Participants are required to create a VR game with the theme SDG."
     }
 ]
 }

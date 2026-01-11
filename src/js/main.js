@@ -4,30 +4,22 @@ import '../scss/styles.scss'
 // Import all of Bootstrap’s JS
 import * as bootstrap from 'bootstrap'
 
-import * as data from '../resource/timeline.json'
+import * as data from '../resource/timeline.json'// assert { type: "json" }
 
 let timeline_content = data.content
-console.log(data.content)
 
 for (let i = 0; i < timeline_content.length; i++) {
 
     timeline_content[i].date = new Date(timeline_content[i].date); 
 }
 
-// result = data.sort(function(a,b) {
-//   a = a.split('/').reverse().join('');
-//   b = b.split('/').reverse().join('');
-// //   return a > b ? 1 : a < b ? -1 : 0;
-//   return a.localeCompare(b);         // <-- alternative 
-// });
-
-console.log(timeline_content.sort((a,b)=> a.date - b.date))
+timeline_content.sort((a,b)=> a.date - b.date)
 
 const text_timeline_list = document.getElementById('timeline_list')
 
 let temp_timeline = ''
 
-for (let i=0; i<timeline_content.length;i++) {
+for (let i=timeline_content.length - 1; i>=0;i--) {
 
     let lr = 'left'
 
