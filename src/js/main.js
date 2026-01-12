@@ -31,7 +31,7 @@ for (let i=timeline_content.length - 1; i>=0;i--) {
 							<div class="timeline-body">
 								<div class="timeline-meta">
 									<div class="d-inline-flex">
-										<span class="text-light">Released on 05 May 2022</span>
+										<span class="text-black">${timeline_content[i].date.toLocaleDateString('en-GB', { weekday:"long", year:"numeric", month:"short", day:"numeric"})}</span>
 									</div>
 								</div>
 								<div class="timeline-content">
