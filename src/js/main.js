@@ -5,6 +5,7 @@ import '../scss/styles.scss'
 import * as bootstrap from 'bootstrap'
 
 import * as data from '../resource/timeline.json'// assert { type: "json" }
+import * as data_project from '../resource/projects.json'// assert { type: "json" }
 
 let timeline_content = data.content
 
@@ -51,3 +52,32 @@ for (let i=timeline_content.length - 1; i>=0;i--) {
 }
 
 text_timeline_list.innerHTML = temp_timeline
+
+
+
+const text_projects_list = document.getElementById('projects_list')
+
+let projects_content = data_project.content
+
+let temp_projects = ''
+
+for (let i=0; i<projects_content.length; i++) {
+
+	temp_projects = temp_projects + `  <div class="col">
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">${projects_content[i].title}</h5>
+        <p class="card-text">${projects_content[i].desc}</p>
+		<a class="card-text" href="https://skillicons.dev">
+			<img src="https://skillicons.dev/icons?i=${projects_content[i].tech}" />
+		</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>`
+}
+
+text_projects_list.innerHTML = temp_projects

@@ -4,25 +4,37 @@
             "title": "Dungeon Dive Card Game",
             "desc": "C++ card game created with SFML",
             "img": "",
-            "tech": ["cpp"]
+            "tech": "cpp"
         },
         {
             "title": "Wordle Malay(API)",
             "desc": "Wordle inspired game played through the API backend",
             "img": "",
-            "tech": ["js","nodejs","express","mongodb","azure"]
+            "tech": "js,nodejs,express,mongodb,azure"
         },
         {
             "title": "Fishing",
             "desc": "VR Game made in Unity during TU-UTeM program",
             "img": "",
-            "tech": ["cs","unity"]
+            "tech": "cs,unity"
         },
         {
             "title": "Surviving on Fishing",
             "desc": "VR Game made in Unity during TU-UTeM program",
             "img": "",
-            "tech": ["cs","unity"]
+            "tech": "cs,unity"
+        },
+        {
+            "title": "Personal Portfolio",
+            "desc": "This website you're currently looking at",
+            "img": "",
+            "tech": "html,js,bootstrap,webpack"
+        },
+        {
+            "title": "Classroom Monitoring (Website part only)",
+            "desc": "A website that pulls in data from Firebase Realtime Database",
+            "img": "",
+            "tech": "html,js,bootstrap,firebase,webpack"
         }
     ]
 }
