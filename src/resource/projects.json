@@ -1,0 +1,28 @@
+{
+    "content":[
+        {
+            "title": "Dungeon Dive Card Game",
+            "desc": "C++ card game created with SFML",
+            "img": "",
+            "tech": ["cpp"]
+        },
+        {
+            "title": "Wordle Malay(API)",
+            "desc": "Wordle inspired game played through the API backend",
+            "img": "",
+            "tech": ["js","nodejs","express","mongodb","azure"]
+        },
+        {
+            "title": "Fishing",
+            "desc": "VR Game made in Unity during TU-UTeM program",
+            "img": "",
+            "tech": ["cs","unity"]
+        },
+        {
+            "title": "Surviving on Fishing",
+            "desc": "VR Game made in Unity during TU-UTeM program",
+            "img": "",
+            "tech": ["cs","unity"]
+        }
+    ]
+}
