@@ -24,6 +24,26 @@
         "date": "2025-2-27",
         "title": "2nd TU-UTeM VR Game Development Project",
         "content":"Joined the VR Game Project again, but as a participant and organisation member. Same concept; Participants are required to create a VR game with the theme SDG."
+    },
+    {
+        "date": "2025-6-25",
+        "title": "Snoezelen Room Integrated Design Project",
+        "content":"Developed a mock of a snozelen room for personalized sensory therapy. The project involves sensors that detect the patient's condition and adjusts the room accordingly"
+    },
+    {
+        "date": "2026-1-9",
+        "title": "Contributed to Classroom Monitoring Website",
+        "content":"The website uses firebase for database"
+    },
+    {
+        "date": "2025-9-26",
+        "title": "Internship at MF Ikhtiar Padu Sdn. Bhd.",
+        "content":"Joined as an intern. Was mainly tasked in GiTN work such as server maintenance at government sites"
+    },
+    {
+        "date": "2026-1-10",
+        "title": "Hybrid Iris Recognition Final Year Project",
+        "content":"Developing a Hybrid Iris Recognition system that uses both fractal and texture feature of the iris"
     }
 ]
 }
