@@ -67,11 +67,8 @@ for (let i=0; i<projects_content.length; i++) {
     <div class="card h-100">
       <img src="${projects_content[i].img}" class="card-img-top" alt="...">
       <div class="card-body">
-	  	<a href=${projects_content[i].link} class="link-container stretched-link">
-        	<h4 class="card-title">${projects_content[i].title}</h4>
-		</a>
 		<h4 class="card-title">
-			<a href=${projects_content[i].link} class="link-container stretched-link text-reset">reset link</a>.
+			<a href=${projects_content[i].link} class="link-container stretched-link text-reset link-underline link-underline-opacity-0">${projects_content[i].title}</a>.
 		</h4>
         <p class="card-text">${projects_content[i].desc}</p>
 		<a class="card-text" href="https://skillicons.dev">
