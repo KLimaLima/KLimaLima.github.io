@@ -64,7 +64,7 @@ let temp_projects = ''
 for (let i=0; i<projects_content.length; i++) {
 
 	temp_projects = temp_projects + `  <div class="col">
-    <div class="card h-100">
+    <div class="card">
       <img src="${projects_content[i].img}" class="card-img-top" alt="...">
       <div class="card-body">
 		<h4 class="card-title">

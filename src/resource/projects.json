@@ -3,7 +3,7 @@
         {
             "title": "Dungeon Dive Card Game",
             "desc": "C++ card game created with SFML",
-            "img": "",
+            "img": "https://drive.google.com/thumbnail?id=17a3nqFM-WCq5jxoCmndMr2CeI_sWOx5z&sz=s800",
             "tech": "cpp",
             "link": "https://github.com/KLimaLima/Dungeon-Dive-Card-Game"
         },
@@ -17,14 +17,14 @@
         {
             "title": "Fishing",
             "desc": "VR Game made in Unity during TU-UTeM program",
-            "img": "",
+            "img": "https://drive.google.com/thumbnail?id=1jeqJKonSlC8EuVjoK7IVarVJlQOoRWyc&sz=s800",
             "tech": "cs,unity",
             "link": "https://github.com/yukiudagawa/Fishing"
         },
         {
             "title": "Surviving on Fishing",
             "desc": "VR Game made in Unity during TU-UTeM program",
-            "img": "",
+            "img": "https://drive.google.com/thumbnail?id=1LUIapOW-F73X7ih-faYnsP8hV6zDpcXc&sz=s800",
             "tech": "cs,unity",
             "link": "https://github.com/KLimaLima/Surviving-on-Fish"
         },
