@@ -65,9 +65,11 @@ for (let i=0; i<projects_content.length; i++) {
 
 	temp_projects = temp_projects + `  <div class="col">
     <div class="card h-100">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="${projects_content[i].img}" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">${projects_content[i].title}</h5>
+	  	<a href=${projects_content[i].link} class="link-container stretched-link text-decoration-none">
+        	<h4 class="card-title">${projects_content[i].title}</h4>
+		</a>
         <p class="card-text">${projects_content[i].desc}</p>
 		<a class="card-text" href="https://skillicons.dev">
 			<img src="https://skillicons.dev/icons?i=${projects_content[i].tech}" />

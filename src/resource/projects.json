@@ -4,37 +4,43 @@
             "title": "Dungeon Dive Card Game",
             "desc": "C++ card game created with SFML",
             "img": "",
-            "tech": "cpp"
+            "tech": "cpp",
+            "link": "https://github.com/KLimaLima/Dungeon-Dive-Card-Game"
         },
         {
             "title": "Wordle Malay(API)",
             "desc": "Wordle inspired game played through the API backend",
             "img": "",
-            "tech": "js,nodejs,express,mongodb,azure"
+            "tech": "js,nodejs,express,mongodb,azure",
+            "link": "https://github.com/KLimaLima/Wordle-Malay"
         },
         {
             "title": "Fishing",
             "desc": "VR Game made in Unity during TU-UTeM program",
             "img": "",
-            "tech": "cs,unity"
+            "tech": "cs,unity",
+            "link": "https://github.com/yukiudagawa/Fishing"
         },
         {
             "title": "Surviving on Fishing",
             "desc": "VR Game made in Unity during TU-UTeM program",
             "img": "",
-            "tech": "cs,unity"
+            "tech": "cs,unity",
+            "link": "https://github.com/KLimaLima/Surviving-on-Fish"
         },
         {
             "title": "Personal Portfolio",
             "desc": "This website you're currently looking at",
             "img": "",
-            "tech": "html,js,bootstrap,webpack"
+            "tech": "html,js,bootstrap,webpack",
+            "link": "https://github.com/KLimaLima/KLimaLima.github.io"
         },
         {
             "title": "Classroom Monitoring (Website part only)",
             "desc": "A website that pulls in data from Firebase Realtime Database",
             "img": "",
-            "tech": "html,js,bootstrap,firebase,webpack"
+            "tech": "html,js,bootstrap,firebase,webpack",
+            "link": "https://github.com/amirfirdausismail0/amirfirdausismail0.github.io"
         }
     ]
 }
