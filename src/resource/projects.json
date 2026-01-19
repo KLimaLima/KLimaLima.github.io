@@ -8,11 +8,11 @@
             "link": "https://github.com/KLimaLima/Dungeon-Dive-Card-Game"
         },
         {
-            "title": "Wordle Malay(API)",
-            "desc": "Wordle inspired game played through the API backend",
-            "img": "",
-            "tech": "js,nodejs,express,mongodb,azure",
-            "link": "https://github.com/KLimaLima/Wordle-Malay"
+            "title": "Snozelen Room Sensory Therapy",
+            "desc": "Sensory therapy that adjusts based on patients condition. ESP32 as its microcontroller",
+            "img": "https://drive.google.com/thumbnail?id=1lZB55w39qLEs1DrzakGtejWbqApJJZax&sz=s800",
+            "tech": "arduino",
+            "link": ""
         },
         {
             "title": "Fishing",
@@ -38,9 +38,16 @@
         {
             "title": "Classroom Monitoring (Website part only)",
             "desc": "A website that pulls in data from Firebase Realtime Database",
-            "img": "",
+            "img": "https://drive.google.com/thumbnail?id=1H8UnJSezZNRMG0DYpDE1k1BlmjGsjYBa&sz=s800",
             "tech": "html,js,bootstrap,firebase,webpack",
             "link": "https://github.com/amirfirdausismail0/amirfirdausismail0.github.io"
+        },
+        {
+            "title": "Wordle Malay(API)",
+            "desc": "Wordle inspired game played through the API backend",
+            "img": "",
+            "tech": "js,nodejs,express,mongodb,azure",
+            "link": "https://github.com/KLimaLima/Wordle-Malay"
         }
     ]
 }
