@@ -31,7 +31,7 @@
         {
             "title": "Personal Portfolio",
             "desc": "This website you're currently looking at",
-            "img": "",
+            "img": "https://drive.google.com/thumbnail?id=1sOQ-HS6bBIKW1A9UM1Kq8xe8k4Pn4E35&sz=s800",
             "tech": "html,js,bootstrap,webpack",
             "link": "https://github.com/KLimaLima/KLimaLima.github.io"
         },

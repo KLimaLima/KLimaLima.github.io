@@ -1,2 +1,12 @@
+// $primary: #c29938;
+
+.card {
+    transition: all 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
 // Import all of Bootstrap’s CSS
 @import "bootstrap/scss/bootstrap";
