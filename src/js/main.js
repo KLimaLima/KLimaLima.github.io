@@ -75,9 +75,6 @@ for (let i=0; i<projects_content.length; i++) {
 			<img src="https://skillicons.dev/icons?i=${projects_content[i].tech}" />
 		</a>
       </div>
-      <div class="card-footer">
-        <small class="text-body-secondary">Last updated 3 mins ago</small>
-      </div>
     </div>
   </div>`
 }
